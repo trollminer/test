@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <addon id="Fringe.IPTV" name="Fringe IPTV" version="2.0" provider-name="Your Name">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Fringe IPTV">
+            <info compressed="false">http://entirelyhosting.cu.cc/repo/_repo/addons.xml</info>
+            <checksum>http://entirelyhosting.cu.cc/repo/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">http://entirelyhosting.cu.cc/repo/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>A short summary of this addon</summary>
+            <description>The description can be longer. Using [CR] you can create a newline. The use of other markup is not advised.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.Fringe"
+       name=" Fringe [COLOR yellow]TV[/COLOR] 2.0"
+       version="3.0"
+       provider-name="Fringe Build">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+	<import addon="script.ivueguide" />
+	<import addon="plugin.video.IVUEcreator" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Fringe TV</summary>
+    <language>en</language>
+    <description lang="en">Fringe TV offers premium quality streams. Credits to sClarke for the code used in this addon.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+</addons>
